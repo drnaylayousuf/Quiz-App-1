@@ -1,0 +1,151 @@
+/* 
+#heading {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 102, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: aliceblue;
+} */
+
+body {
+    background-image: url(abstract-realistic-technology-particle-background_23-2148416025.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#goodLuckImage{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: none; 
+    width: 100%;
+    height: 100vh;
+}
+#box{
+    background-color: bisque;
+} 
+
+.box-shadow {
+    font-family: cursive, sans-serif;
+    background: radial-gradient(circle at 10% 20%, rgb(6, 123, 239) 14.2%, rgb(219, 115, 249) 89.5%);
+    padding: 10px;
+    border-radius:  15px ;
+    box-shadow: 2px 2px 20px 23px #F4BAF1; 
+    width: 390px;
+    height: 200px;
+
+    /*  #7fecda */
+
+  }
+
+
+#timer{
+    border-radius: 10px;
+    font-size: 40px;
+    background: linear-gradient(to top, rgb(251, 194, 235) 0%, rgb(166, 193, 238) 100%);    width: 160px;
+}
+
+#ques{
+    border-radius: 15px;
+    background: radial-gradient(circle at 10% 20%, rgb(6, 123, 239) 14.2%, rgb(219, 115, 249) 89.5%);
+    padding: 20px;
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+}
+/* 
+.main{
+    color: aqua;
+    font-size: 22px;
+} */
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+#btn {
+    padding: 0.5em 1em;
+    background: linear-gradient(to right, rgb(178, 69, 146), rgb(241, 95, 121))2%;
+    border-radius: 11px;
+    user-select: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.5s linear;
+    color: black;
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+#btn:hover::after, .btn:hover::before {
+    content: '';
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    animation: move-right-side 1s ease infinite;
+}
+
+#btn:hover::before {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    inset: 0;
+    animation: move-left-side 1s ease infinite;
+    z-index: -2;
+}
+
+#btn:hover {
+    background-color: #fff;
+    color: #00C9FF;
+}
+
+@keyframes move-right-side {
+    0% {
+        inset: 0.3em 0 0 0.3em; /*top | left */
+    }
+
+    33% {
+        inset: 0 0.3em 0.3em 0; /*right| bottom*/
+    }
+        
+    66% {
+        /* top | right | bottom | left */
+        inset: 1em 0 0 0.5em; /*top | right */
+    }
+
+    100% {
+        inset:0  1em 0.5em 0;
+    }
+}
+
+/* Move left Side */
+
+@keyframes move-left-side {
+    0% {
+        right: -1em;
+        top: -0.5em;
+    }
+
+    33% {
+        bottom: -1em;
+        left: -0.5em;
+    }
+
+    66% {
+        top: 0;
+        right:-0.7;
+    }
+
+    100% {
+        right: -1em;
+        top: -0.5em;
+    }
+}
