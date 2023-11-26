@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>    
+
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<center>
+<body onload="nextQuestion()">
+    <img id="goodLuckImage" src="./good-luck-pictures-yzz8x01qia3z8ggo.jpg"  width="100%" >
+
+    <div>
+        <p id="timer">2:00</p>
+    </div>
+
+    <div >
+
+        <p id="ques"></p>
+ </div>
+        <br>
+       <div class="box-shadow">
+        <input onclick="clicked()" value="1" name="options" type="radio">
+        <label id="opt1"></label>
+         <br>
+        <br><br>
+        
+        <input onclick="clicked()" value="2" name="options" type="radio">
+        <label id="opt2"></label>
+
+        <br>
+        <br><br>
+
+        <input onclick="clicked()" value="3" name="options" type="radio">
+        <label id="opt3"></label>
+
+        <br>
+        <br><br>
+    
+    <br><br>
+    
+        <button id="btn" disabled onclick="nextQuestion()" class="btn-hover color-1" >next</button>
+    
+        
+          <div onclick="displayResult() "></div>
+          
+         
+    </div>
+
+</center>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
