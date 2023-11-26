@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QUIZ APP</title>
+</head>
+
+<body onload="nextQuestion()">
+    <center>
+        <div class="background">
+            <img class="logo" src="./quiz-logo-png-hd-free-png-images-21091.png" width="200px" alt="">
+        </div>
+    </center>
+    <center>
+        <div>
+            <p style="color: white; font-size: 40px;" id="timer">2:00</p>
+        </div>
+    </center>
+
+    <center>
+        <div class="container" id="myimage">
+            <p id="ques"></p>
+            <br>
+            <input onclick="clicked()" value="1" name="options" type="radio">
+            <label id="opt1"></label>
+            <br>
+            <br>
+
+            <input onclick="clicked()" value="2" name="options" type="radio">
+            <label id="opt2"></label>
+
+            <br>
+            <br>
+
+            <input onclick="clicked()" value="3" name="options" type="radio">
+            <label id="opt3"></label>
+
+            <br>
+            <br>
+
+            <button class="buttonquiz" id="btn" disabled onclick="nextQuestion()">Next</button>
+        </div>
+
+
+
+
+        <div onclick="displayResult() "></div>
+
+    </center>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+
+    </script>
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
